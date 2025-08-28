@@ -25,7 +25,7 @@ const Footer = () => {
           {/* Logo & Description */}
           <div className="md:col-span-1">
             <div className="flex items-center space-x-3 mb-4">
-              <img src="/lovable-uploads/8aa903cc-548b-4f2d-9088-7cc5de1bd112.png" alt="Behind the Scenes" className="h-10 w-auto" />
+              <img src="/lovable-uploads/e8c46c1b-1a8d-411c-81db-3b75f2ef9243.png" alt="Behind the Scenes" className="h-10 w-auto" />
               <span className="font-poppins font-bold text-lg">Behind the Scenes</span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">

@@ -25,7 +25,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 text-center relative z-10">
         {/* Logo */}
         <div className="flex justify-center mb-8">
-          <img src="/lovable-uploads/8aa903cc-548b-4f2d-9088-7cc5de1bd112.png" alt="Behind the Scenes" className="h-20 w-auto" />
+          <img src="/lovable-uploads/e8c46c1b-1a8d-411c-81db-3b75f2ef9243.png" alt="Behind the Scenes" className="h-20 w-auto" />
         </div>
 
         {/* Main Title */}
