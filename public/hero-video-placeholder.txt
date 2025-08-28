@@ -1,0 +1,1 @@
+This file creates the public folder. You can delete this file after uploading your video as hero-video.mp4
