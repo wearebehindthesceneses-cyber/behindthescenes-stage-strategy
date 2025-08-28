@@ -1,0 +1,62 @@
+import { useLanguage } from '@/contexts/LanguageContext';
+import { Button } from '@/components/ui/button';
+import { Sparkles } from 'lucide-react';
+import heroBackground from '@/assets/hero-background.jpg';
+
+const Hero = () => {
+  const { t } = useLanguage();
+
+  return (
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      {/* Background Image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
+        style={{ backgroundImage: `url(${heroBackground})` }}
+      />
+      
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/90 to-background/95" />
+      
+      {/* Floating Elements */}
+      <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary rounded-full animate-pulse opacity-60" />
+      <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-secondary rounded-full animate-pulse opacity-40 animation-delay-1000" />
+      <div className="absolute bottom-1/3 left-1/3 w-3 h-3 bg-primary/30 rounded-full animate-pulse opacity-50 animation-delay-2000" />
+
+      <div className="container mx-auto px-6 text-center relative z-10">
+        {/* Logo */}
+        <div className="flex justify-center mb-8">
+          <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center shadow-lg">
+            <span className="text-primary-foreground font-poppins font-bold text-2xl">BTS</span>
+          </div>
+        </div>
+
+        {/* Main Title */}
+        <div className="max-w-4xl mx-auto">
+          <h1 className="hero-title mb-6 fade-in-up">
+            {t('hero.title')} <Sparkles className="inline-block ml-2 text-secondary" size={40} />
+          </h1>
+          
+          <p className="hero-subtitle mb-12 fade-in-up mx-auto">
+            {t('hero.subtitle')}
+          </p>
+
+            <Button 
+              className="btn-hero fade-in-up"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              {t('hero.cta')}
+            </Button>
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+          <div className="w-6 h-10 border-2 border-muted-foreground rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-muted-foreground rounded-full mt-2 animate-bounce" />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;

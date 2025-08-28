@@ -1,58 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Behind The Scenes Design System */
 
 @layer base {
   :root {
+    /* Brand Colors */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
+    --foreground: 0 0% 6.7%;
+    
+    --primary: 254 69% 58%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 43 96% 53%;
+    --secondary-foreground: 0 0% 6.7%;
+    
+    --accent: 254 69% 58%;
+    --accent-foreground: 0 0% 100%;
+    
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
+    --card-foreground: 0 0% 6.7%;
+    
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
+    --popover-foreground: 0 0% 6.7%;
+    
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 254 69% 58%;
+    
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --radius: 0.75rem;
+    
+    /* Custom Brand Variables */
+    --brand-purple: 254 69% 58%;
+    --brand-yellow: 43 96% 53%;
+    --brand-gray-light: 0 0% 96.1%;
+    --brand-black: 0 0% 6.7%;
+    
+    /* Typography Scale */
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem;
+    --font-size-4xl: 2.25rem;
+    --font-size-5xl: 3rem;
+    --font-size-6xl: 3.75rem;
+    
+    /* Spacing Scale */
+    --spacing-section: 6rem;
+    --spacing-content: 2rem;
+    
+    /* Animation */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   .dark {
@@ -100,6 +111,70 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter;
+    scroll-behavior: smooth;
+  }
+  
+  /* Typography Classes */
+  .font-poppins {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  /* Hero Styles */
+  .hero-title {
+    @apply font-poppins font-bold text-5xl md:text-6xl leading-tight;
+  }
+  
+  .hero-subtitle {
+    @apply font-inter text-lg md:text-xl text-muted-foreground max-w-2xl;
+  }
+  
+  /* Section Styles */
+  .section-title {
+    @apply font-poppins font-bold text-3xl md:text-4xl text-center mb-4;
+  }
+  
+  .section-subtitle {
+    @apply font-poppins font-medium text-xl md:text-2xl;
+  }
+  
+  .section-text {
+    @apply font-inter text-base md:text-lg leading-relaxed;
+  }
+  
+  /* Button Variants */
+  .btn-hero {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 
+           font-poppins font-semibold px-8 py-4 rounded-full 
+           transition-all duration-300 hover:scale-105 hover:shadow-lg
+           shadow-md;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/90 
+           font-poppins font-semibold px-6 py-3 rounded-full
+           transition-all duration-300 hover:scale-105;
+  }
+  
+  /* Service Card */
+  .service-card {
+    @apply bg-card border border-border rounded-2xl p-6 
+           transition-all duration-300 hover:shadow-lg hover:-translate-y-1
+           hover:border-primary/20;
+  }
+  
+  /* Animation Classes */
+  .fade-in-up {
+    @apply opacity-0 translate-y-8 transition-all duration-700;
+  }
+  
+  .fade-in-up.in-view {
+    @apply opacity-100 translate-y-0;
   }
 }
