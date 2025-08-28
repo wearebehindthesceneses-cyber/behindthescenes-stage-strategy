@@ -21,7 +21,7 @@ const translations = {
     
     // Hero
     'hero.title': 'Where show meets business',
-    'hero.subtitle': 'Partner estratégico para espectáculos y eventos. Ayudamos a proyectos culturales a crecer con impacto y sostenibilidad.',
+    'hero.subtitle': '🚀 Impulsamos tu proyecto hacia el éxito. Partner estratégico para espectáculos y eventos culturales con impacto y sostenibilidad.',
     'hero.cta': 'Hablemos de tu proyecto',
     
     // About
@@ -94,7 +94,7 @@ const translations = {
     
     // Hero
     'hero.title': 'Where show meets business',
-    'hero.subtitle': 'Your strategic partner for shows and events. We help cultural projects grow with impact and sustainability.',
+    'hero.subtitle': '🚀 We propel your project to success. Strategic partner for cultural shows and events with impact and sustainability.',
     'hero.cta': "Let's talk about your project",
     
     // About
