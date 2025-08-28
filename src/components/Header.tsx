@@ -22,9 +22,8 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center">
             <img src="/lovable-uploads/e8c46c1b-1a8d-411c-81db-3b75f2ef9243.png" alt="Behind the Scenes" className="h-10 w-auto" />
-            <span className="font-poppins font-bold text-xl hidden sm:block">Behind the Scenes</span>
           </div>
 
           {/* Desktop Navigation */}

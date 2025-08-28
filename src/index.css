@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -76,10 +76,6 @@
   }
   
   /* Typography Classes */
-  .font-poppins {
-    font-family: 'Poppins', sans-serif;
-  }
-  
   .font-inter {
     font-family: 'Inter', sans-serif;
   }
@@ -88,7 +84,7 @@
 @layer components {
   /* Hero Styles */
   .hero-title {
-    @apply font-poppins font-bold text-5xl md:text-6xl leading-tight;
+    @apply font-inter font-bold text-5xl md:text-6xl leading-tight;
   }
   
   .hero-subtitle {
@@ -97,11 +93,11 @@
   
   /* Section Styles */
   .section-title {
-    @apply font-poppins font-bold text-3xl md:text-4xl text-center mb-4;
+    @apply font-inter font-bold text-3xl md:text-4xl text-center mb-4;
   }
   
   .section-subtitle {
-    @apply font-poppins font-medium text-xl md:text-2xl;
+    @apply font-inter font-semibold text-xl md:text-2xl;
   }
   
   .section-text {
@@ -111,14 +107,14 @@
   /* Button Variants */
   .btn-hero {
     @apply bg-primary text-primary-foreground hover:bg-primary/90 
-           font-poppins font-semibold px-8 py-4 rounded-full 
+           font-inter font-semibold px-8 py-4 rounded-full 
            transition-all duration-300 hover:scale-105 hover:shadow-lg
            shadow-md hover:shadow-primary/20;
   }
   
   .btn-secondary {
     @apply bg-secondary text-secondary-foreground hover:bg-secondary/90 
-           font-poppins font-semibold px-6 py-3 rounded-full
+           font-inter font-semibold px-6 py-3 rounded-full
            transition-all duration-300 hover:scale-105;
   }
   
@@ -127,6 +123,16 @@
     @apply bg-card border border-border rounded-2xl p-6 
            transition-all duration-300 hover:shadow-xl hover:-translate-y-1
            hover:border-primary/30 hover:shadow-primary/10;
+  }
+  
+  /* Section Separator */
+  .section-separator {
+    @apply relative;
+  }
+  
+  .section-separator::before {
+    content: '';
+    @apply absolute top-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-primary to-secondary rounded-full;
   }
   
   /* Animation Classes */
