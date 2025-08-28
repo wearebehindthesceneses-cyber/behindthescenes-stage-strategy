@@ -23,6 +23,14 @@ const Clients = () => {
     {
       name: 'Tease',
       logo: '/lovable-uploads/2c86cd0e-b9ef-4759-aead-6effbfbf1f12.png'
+    },
+    {
+      name: 'GREC Festival',
+      logo: '/lovable-uploads/d0aa4f42-a2e4-4a4e-9d15-0f75031de837.png'
+    },
+    {
+      name: 'Jackies',
+      logo: '/lovable-uploads/1b14393c-6f45-4114-a811-dfecff337158.png'
     }
   ];
 
@@ -40,19 +48,27 @@ const Clients = () => {
           {t('clients.title')}
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 items-center justify-items-center">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-16 items-center justify-items-center max-w-6xl mx-auto">
           {clients.map((client, index) => (
             <div
               key={index}
-              className="bg-card/60 backdrop-blur-sm rounded-2xl p-8 w-32 h-32 flex items-center justify-center 
-                         hover:shadow-xl hover:-translate-y-2 transition-all duration-300 
-                         border border-border/30 hover:border-primary/30 fade-in-up group"
+              className="bg-card/60 backdrop-blur-sm rounded-3xl p-10 w-44 h-44 flex items-center justify-center 
+                         hover:shadow-2xl hover:-translate-y-3 transition-all duration-300 
+                         border border-border/30 hover:border-primary/40 fade-in-up group
+                         hover:bg-card/80"
             >
               <img 
                 src={client.logo} 
                 alt={client.name}
-                className="max-w-full max-h-full object-contain filter group-hover:brightness-110 
-                           transition-all duration-300"
+                className="max-w-full max-h-full object-contain filter 
+                           group-hover:brightness-110 group-hover:contrast-110
+                           transition-all duration-300 drop-shadow-sm"
+                style={{
+                  filter: client.name === 'Fury' ? 'hue-rotate(320deg) saturate(0.7)' : 
+                          client.name === 'GREC Festival' ? 'hue-rotate(10deg) saturate(1.1)' :
+                          client.name === 'Jackies' ? 'hue-rotate(350deg) saturate(0.9)' :
+                          'none'
+                }}
               />
             </div>
           ))}
