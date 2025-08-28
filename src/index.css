@@ -12,13 +12,13 @@
     --background: 222 15% 8%;
     --foreground: 0 0% 95%;
     
-    --primary: 254 69% 58%;
+    --primary: 254 69% 68%;
     --primary-foreground: 0 0% 100%;
     
     --secondary: 43 96% 53%;
     --secondary-foreground: 222 15% 8%;
     
-    --accent: 254 69% 58%;
+    --accent: 254 69% 68%;
     --accent-foreground: 0 0% 100%;
     
     --muted: 222 15% 12%;
@@ -32,7 +32,7 @@
     
     --border: 222 15% 18%;
     --input: 222 15% 18%;
-    --ring: 254 69% 58%;
+    --ring: 254 69% 68%;
     
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
@@ -40,7 +40,7 @@
     --radius: 0.75rem;
     
     /* Custom Brand Variables */
-    --brand-purple: 254 69% 58%;
+    --brand-purple: 254 69% 68%;
     --brand-yellow: 43 96% 53%;
     --brand-gray-light: 222 15% 12%;
     --brand-black: 0 0% 95%;

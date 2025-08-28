@@ -22,11 +22,9 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-              <span className="text-primary-foreground font-poppins font-bold text-sm">BTS</span>
-            </div>
-            <span className="font-poppins font-bold text-xl hidden sm:block">Behind The Scenes</span>
+          <div className="flex items-center space-x-3">
+            <img src="/lovable-uploads/8aa903cc-548b-4f2d-9088-7cc5de1bd112.png" alt="Behind the Scenes" className="h-10 w-auto" />
+            <span className="font-poppins font-bold text-xl hidden sm:block">Behind the Scenes</span>
           </div>
 
           {/* Desktop Navigation */}

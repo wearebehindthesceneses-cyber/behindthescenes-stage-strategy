@@ -25,9 +25,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 text-center relative z-10">
         {/* Logo */}
         <div className="flex justify-center mb-8">
-          <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center shadow-lg">
-            <span className="text-primary-foreground font-poppins font-bold text-2xl">BTS</span>
-          </div>
+          <img src="/lovable-uploads/8aa903cc-548b-4f2d-9088-7cc5de1bd112.png" alt="Behind the Scenes" className="h-20 w-auto" />
         </div>
 
         {/* Main Title */}

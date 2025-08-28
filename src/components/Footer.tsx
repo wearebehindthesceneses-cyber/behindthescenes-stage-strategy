@@ -24,11 +24,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Logo & Description */}
           <div className="md:col-span-1">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
-                <span className="text-primary-foreground font-poppins font-bold text-sm">BTS</span>
-              </div>
-              <span className="font-poppins font-bold text-lg">Behind The Scenes</span>
+            <div className="flex items-center space-x-3 mb-4">
+              <img src="/lovable-uploads/8aa903cc-548b-4f2d-9088-7cc5de1bd112.png" alt="Behind the Scenes" className="h-10 w-auto" />
+              <span className="font-poppins font-bold text-lg">Behind the Scenes</span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
               Where Show Meets Business ✨

@@ -26,7 +26,7 @@ const translations = {
     
     // About
     'about.title': 'Sobre Nosotros',
-    'about.text': 'En Behind The Scenes creemos que detrás de cada espectáculo hay un gran equipo. Somos una agencia estratégica especializada en la industria cultural y del entretenimiento. Trabajamos con productores, festivales y compañías para diseñar estrategias que permitan escalar proyectos, abrir nuevos mercados y consolidar su impacto de forma sostenible.',
+    'about.text': 'En Behind the Scenes creemos que detrás de cada espectáculo hay un gran equipo. Somos una agencia estratégica especializada en la industria cultural y del entretenimiento. Trabajamos con productores, festivales y compañías para diseñar estrategias que permitan escalar proyectos, abrir nuevos mercados y consolidar su impacto de forma sostenible.',
     
     // Services
     'services.title': 'Nuestros Servicios',
@@ -58,7 +58,7 @@ const translations = {
     
     // Footer
     'footer.quicklinks': 'Enlaces rápidos',
-    'footer.copyright': '© 2024 Behind The Scenes. Todos los derechos reservados.',
+    'footer.copyright': '© 2024 Behind the Scenes. Todos los derechos reservados.',
     
     // Contact Form
     'contact.form.name': 'Nombre',
@@ -99,7 +99,7 @@ const translations = {
     
     // About
     'about.title': 'About Us',
-    'about.text': 'At Behind The Scenes, we believe that behind every show there\'s a great team. We are a strategic agency specialized in the cultural and entertainment industry. We work with producers, festivals, and companies to design strategies that help projects scale, enter new markets, and achieve sustainable impact.',
+    'about.text': 'At Behind the Scenes, we believe that behind every show there\'s a great team. We are a strategic agency specialized in the cultural and entertainment industry. We work with producers, festivals, and companies to design strategies that help projects scale, enter new markets, and achieve sustainable impact.',
     
     // Services
     'services.title': 'Our Services',
@@ -131,7 +131,7 @@ const translations = {
     
     // Footer
     'footer.quicklinks': 'Quick Links',
-    'footer.copyright': '© 2024 Behind The Scenes. All rights reserved.',
+    'footer.copyright': '© 2024 Behind the Scenes. All rights reserved.',
     
     // Contact Form
     'contact.form.name': 'Name',
