@@ -36,16 +36,16 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-center items-center gap-16 max-w-5xl mx-auto">
+        <div className="flex flex-col md:flex-row justify-center items-start gap-16 max-w-5xl mx-auto">
           {teamMembers.map((member, index) => (
-            <div key={index} className="text-center fade-in-up group">
+            <div key={index} className="text-center fade-in-up group flex-1">
               <div className="relative mb-6">
                 {/* Circular Profile image */}
                 <div className="relative overflow-hidden rounded-full mx-auto group-hover:scale-105 transition-transform duration-300">
                   <img 
                     src={member.image} 
                     alt={member.name}
-                    className="w-48 h-48 object-cover rounded-full shadow-xl border-4 border-border/20"
+                    className="w-48 h-48 object-cover rounded-full shadow-xl border-4 border-border/20 mx-auto"
                   />
                   {/* Gradient border effect */}
                   <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/20 to-secondary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -55,11 +55,13 @@ const Team = () => {
                 <div className="absolute -inset-2 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-sm"></div>
               </div>
               
-              {/* Name and role */}
-              <h3 className="font-inter font-bold text-2xl mb-2 group-hover:text-primary transition-colors duration-300">
-                {member.name}
-              </h3>
-              <p className="section-text text-muted-foreground">{t(member.roleKey)}</p>
+              {/* Name and role - centered */}
+              <div className="flex flex-col items-center">
+                <h3 className="font-inter font-bold text-2xl mb-2 group-hover:text-primary transition-colors duration-300">
+                  {member.name}
+                </h3>
+                <p className="section-text text-muted-foreground text-center">{t(member.roleKey)}</p>
+              </div>
             </div>
           ))}
         </div>
