@@ -29,7 +29,7 @@ const Footer = () => {
               <span className="font-poppins font-bold text-lg">Behind the Scenes</span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              Where Show Meets Business ✨
+              Where show meets business ✨
             </p>
           </div>
 

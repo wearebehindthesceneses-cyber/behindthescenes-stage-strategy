@@ -20,16 +20,16 @@ const translations = {
     'nav.contact': 'Contacto',
     
     // Hero
-    'hero.title': 'Where Show Meets Business',
+    'hero.title': 'Where show meets business',
     'hero.subtitle': 'Partner estratégico para espectáculos y eventos. Ayudamos a proyectos culturales a crecer con impacto y sostenibilidad.',
     'hero.cta': 'Hablemos de tu proyecto',
     
     // About
-    'about.title': 'Sobre Nosotros',
+    'about.title': 'Sobre nosotros',
     'about.text': 'En Behind the Scenes creemos que detrás de cada espectáculo hay un gran equipo. Somos una agencia estratégica especializada en la industria cultural y del entretenimiento. Trabajamos con productores, festivales y compañías para diseñar estrategias que permitan escalar proyectos, abrir nuevos mercados y consolidar su impacto de forma sostenible.',
     
     // Services
-    'services.title': 'Nuestros Servicios',
+    'services.title': 'Nuestros servicios',
     'services.production.title': 'Producción & Operaciones',
     'services.production.desc': 'Venue scouting, importación y exportación de espectáculos, gestión integral de eventos.',
     'services.ticketing.title': 'Ticketing & Distribución',
@@ -44,10 +44,10 @@ const translations = {
     'services.consulting.desc': 'Asesoría estratégica, búsqueda de financiación, acceso a ayudas culturales.',
     
     // Clients
-    'clients.title': 'Casos de Éxito',
+    'clients.title': 'Nuestros clientes',
     
     // Team
-    'team.title': 'Nuestro Equipo',
+    'team.title': 'Quién somos',
     'team.subtitle': 'Nuestro equipo combina experiencia en estrategia, marketing y operaciones con una pasión común: hacer crecer proyectos culturales y de entretenimiento.',
     'team.andrea.role': 'Estrategia y desarrollo de negocio',
     'team.alexia.role': 'Marketing y comunicación',
@@ -93,16 +93,16 @@ const translations = {
     'nav.contact': 'Contact',
     
     // Hero
-    'hero.title': 'Where Show Meets Business',
+    'hero.title': 'Where show meets business',
     'hero.subtitle': 'Your strategic partner for shows and events. We help cultural projects grow with impact and sustainability.',
     'hero.cta': "Let's talk about your project",
     
     // About
-    'about.title': 'About Us',
+    'about.title': 'About us',
     'about.text': 'At Behind the Scenes, we believe that behind every show there\'s a great team. We are a strategic agency specialized in the cultural and entertainment industry. We work with producers, festivals, and companies to design strategies that help projects scale, enter new markets, and achieve sustainable impact.',
     
     // Services
-    'services.title': 'Our Services',
+    'services.title': 'Our services',
     'services.production.title': 'Production & Operations',
     'services.production.desc': 'Venue scouting, show import/export, full event management.',
     'services.ticketing.title': 'Ticketing & Distribution',
@@ -117,10 +117,10 @@ const translations = {
     'services.consulting.desc': 'Strategic consultancy, funding advisory, cultural grants support.',
     
     // Clients
-    'clients.title': 'Success Stories',
+    'clients.title': 'Our clients',
     
     // Team
-    'team.title': 'Our Team',
+    'team.title': 'Who we are',
     'team.subtitle': 'Our team blends expertise in strategy, marketing, and operations with a shared passion: growing cultural and entertainment projects.',
     'team.andrea.role': 'Strategy and business development',
     'team.alexia.role': 'Marketing and communication',
