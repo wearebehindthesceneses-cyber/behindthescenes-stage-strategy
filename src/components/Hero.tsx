@@ -1,21 +1,28 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { Sparkles } from 'lucide-react';
-import heroBackground from '@/assets/hero-background.jpg';
+import heroVideo from '@/assets/hero-video.mp4';
 
 const Hero = () => {
   const { t } = useLanguage();
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
-        style={{ backgroundImage: `url(${heroBackground})` }}
-      />
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover opacity-40"
+      >
+        <source src={heroVideo} type="video/mp4" />
+        {/* Fallback for browsers that don't support video */}
+        <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-muted/30" />
+      </video>
       
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background/98 via-background/95 to-background/98" />
+      <div className="absolute inset-0 bg-gradient-to-br from-background/85 via-background/75 to-background/85" />
       
       {/* Floating Elements */}
       <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary rounded-full animate-pulse opacity-80" />
