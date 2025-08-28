@@ -15,10 +15,14 @@ const Hero = () => {
         muted
         playsInline
         className="absolute inset-0 w-full h-full object-cover opacity-40"
+        onError={(e) => {
+          console.error('Video failed to load:', e);
+          // Fallback to image if video fails
+          e.currentTarget.style.display = 'none';
+        }}
       >
         <source src={heroVideo} type="video/mp4" />
-        {/* Fallback for browsers that don't support video */}
-        <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-muted/30" />
+        Your browser does not support the video tag.
       </video>
       
       {/* Gradient Overlay */}

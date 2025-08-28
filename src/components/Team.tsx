@@ -40,19 +40,19 @@ const Team = () => {
           {teamMembers.map((member, index) => (
             <div key={index} className="text-center fade-in-up group">
               <div className="relative mb-6">
-                {/* Profile image */}
-                <div className="relative overflow-hidden rounded-2xl mx-auto group-hover:scale-105 transition-transform duration-300">
+                {/* Circular Profile image */}
+                <div className="relative overflow-hidden rounded-full mx-auto group-hover:scale-105 transition-transform duration-300">
                   <img 
                     src={member.image} 
                     alt={member.name}
-                    className="w-64 h-80 object-cover rounded-2xl shadow-xl"
+                    className="w-48 h-48 object-cover rounded-full shadow-xl border-4 border-border/20"
                   />
-                  {/* Gradient overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent rounded-2xl"></div>
+                  {/* Gradient border effect */}
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/20 to-secondary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 
-                {/* Decorative border */}
-                <div className="absolute -inset-1 bg-gradient-to-r from-primary/30 to-secondary/30 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
+                {/* Decorative circular border */}
+                <div className="absolute -inset-2 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 blur-sm"></div>
               </div>
               
               {/* Name and role */}
