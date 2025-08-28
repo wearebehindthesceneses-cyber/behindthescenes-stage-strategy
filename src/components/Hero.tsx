@@ -10,15 +10,13 @@ const Hero = () => {
       {/* Video Background Block - Ready for Visual Edits Upload */}
       <div className="absolute inset-0 -z-10">
         <video
+          src="/hero-background-video.mp4"
           autoPlay
           muted
           loop
           playsInline
           className="w-full h-full object-cover"
-          style={{ backgroundColor: '#1a1a1a' }}
-        >
-          {/* Placeholder - Video will be uploaded via Visual Edits */}
-        </video>
+        />
         {/* Overlay para mantener contraste del texto */}
         <div className="absolute inset-0 bg-black/40" />
       </div>
