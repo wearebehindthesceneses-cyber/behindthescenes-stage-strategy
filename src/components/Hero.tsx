@@ -13,13 +13,12 @@ const Hero = () => {
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover opacity-40"
-        onError={(e) => {
-          console.error('Video failed to load:', e);
-        }}
+        preload="auto"
+        className="absolute inset-0 w-full h-full object-cover opacity-50"
+        style={{ zIndex: -2 }}
       >
+        <source src="https://drive.google.com/uc?export=download&id=1cr2RybZw0szDMQD2hQM3-LiYGpkcO0tI" type="video/mp4" />
         <source src="/hero-video.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
       </video>
       
       {/* Fallback background for when video doesn't load */}

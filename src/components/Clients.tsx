@@ -35,6 +35,14 @@ const Clients = () => {
     {
       name: 'El Dorado',
       logo: '/lovable-uploads/73c65180-49de-4afa-8763-8e69a589a8ab.png'
+    },
+    {
+      name: 'Les Farfadais',
+      logo: null // Pendiente de logo
+    },
+    {
+      name: 'Festival El Desvarío',
+      logo: null // Pendiente de logo
     }
   ];
 
@@ -53,7 +61,7 @@ const Clients = () => {
         </h2>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-20 items-center justify-items-center max-w-7xl mx-auto">
-          {clients.map((client, index) => (
+          {clients.filter(client => client.logo).map((client, index) => (
             <div
               key={index}
               className="bg-card/60 backdrop-blur-sm rounded-3xl p-12 w-56 h-56 flex items-center justify-center 
@@ -76,6 +84,15 @@ const Clients = () => {
             </div>
           ))}
         </div>
+        
+        {/* Clientes pendientes de logo */}
+        {clients.filter(client => !client.logo).length > 0 && (
+          <div className="mt-12 text-center">
+            <p className="text-muted-foreground text-sm">
+              Próximamente: {clients.filter(client => !client.logo).map(client => client.name).join(', ')}
+            </p>
+          </div>
+        )}
       </div>
     </section>
   );
