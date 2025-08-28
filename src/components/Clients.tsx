@@ -31,6 +31,10 @@ const Clients = () => {
     {
       name: 'Jackies',
       logo: '/lovable-uploads/1b14393c-6f45-4114-a811-dfecff337158.png'
+    },
+    {
+      name: 'El Dorado',
+      logo: '/lovable-uploads/73c65180-49de-4afa-8763-8e69a589a8ab.png'
     }
   ];
 
@@ -48,11 +52,11 @@ const Clients = () => {
           {t('clients.title')}
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-16 items-center justify-items-center max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-20 items-center justify-items-center max-w-7xl mx-auto">
           {clients.map((client, index) => (
             <div
               key={index}
-              className="bg-card/60 backdrop-blur-sm rounded-3xl p-10 w-44 h-44 flex items-center justify-center 
+              className="bg-card/60 backdrop-blur-sm rounded-3xl p-12 w-56 h-56 flex items-center justify-center 
                          hover:shadow-2xl hover:-translate-y-3 transition-all duration-300 
                          border border-border/30 hover:border-primary/40 fade-in-up group
                          hover:bg-card/80"
@@ -64,8 +68,7 @@ const Clients = () => {
                            group-hover:brightness-110 group-hover:contrast-110
                            transition-all duration-300 drop-shadow-sm"
                 style={{
-                  filter: client.name === 'Fury' ? 'hue-rotate(320deg) saturate(0.7)' : 
-                          client.name === 'GREC Festival' ? 'hue-rotate(10deg) saturate(1.1)' :
+                  filter: client.name === 'GREC Festival' ? 'hue-rotate(10deg) saturate(1.1)' :
                           client.name === 'Jackies' ? 'hue-rotate(350deg) saturate(0.9)' :
                           'none'
                 }}
