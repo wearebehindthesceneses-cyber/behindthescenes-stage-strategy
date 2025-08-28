@@ -15,12 +15,12 @@ const Hero = () => {
       />
       
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/90 to-background/95" />
+      <div className="absolute inset-0 bg-gradient-to-br from-background/98 via-background/95 to-background/98" />
       
       {/* Floating Elements */}
-      <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary rounded-full animate-pulse opacity-60" />
-      <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-secondary rounded-full animate-pulse opacity-40 animation-delay-1000" />
-      <div className="absolute bottom-1/3 left-1/3 w-3 h-3 bg-primary/30 rounded-full animate-pulse opacity-50 animation-delay-2000" />
+      <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary rounded-full animate-pulse opacity-80" />
+      <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-secondary rounded-full animate-pulse opacity-60 animation-delay-1000" />
+      <div className="absolute bottom-1/3 left-1/3 w-3 h-3 bg-primary/40 rounded-full animate-pulse opacity-70 animation-delay-2000" />
 
       <div className="container mx-auto px-6 text-center relative z-10">
         {/* Logo */}
@@ -50,8 +50,8 @@ const Hero = () => {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-          <div className="w-6 h-10 border-2 border-muted-foreground rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-muted-foreground rounded-full mt-2 animate-bounce" />
+          <div className="w-6 h-10 border-2 border-muted-foreground/60 rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-muted-foreground/60 rounded-full mt-2 animate-bounce" />
           </div>
         </div>
       </div>
