@@ -1,7 +1,6 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { Sparkles } from 'lucide-react';
-import heroVideo from '@/assets/hero-video.mp4';
 
 const Hero = () => {
   const { t } = useLanguage();
@@ -17,13 +16,14 @@ const Hero = () => {
         className="absolute inset-0 w-full h-full object-cover opacity-40"
         onError={(e) => {
           console.error('Video failed to load:', e);
-          // Fallback to image if video fails
-          e.currentTarget.style.display = 'none';
         }}
       >
-        <source src={heroVideo} type="video/mp4" />
+        <source src="/hero-video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+      
+      {/* Fallback background for when video doesn't load */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-secondary/10 opacity-50" />
       
       {/* Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-background/85 via-background/75 to-background/85" />
