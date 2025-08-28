@@ -7,21 +7,21 @@ const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Video Background */}
+      {/* Video Background Block - Ready for Visual Edits Upload */}
       <div className="absolute inset-0 -z-10">
         <video
-          src="/hero-video.mp4"
           autoPlay
           muted
           loop
           playsInline
           className="w-full h-full object-cover"
-        />
-        {/* Overlay para mejorar contraste del texto */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/50" />
+          style={{ backgroundColor: '#1a1a1a' }}
+        >
+          {/* Placeholder - Video will be uploaded via Visual Edits */}
+        </video>
+        {/* Overlay para mantener contraste del texto */}
+        <div className="absolute inset-0 bg-black/40" />
       </div>
-      {/* Clean Background - ready for your video upload */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-muted/20 to-background"></div>
       
       {/* Decorative elements */}
       <div className="absolute top-20 left-20 w-32 h-32 bg-primary/10 rounded-full blur-2xl"></div>
