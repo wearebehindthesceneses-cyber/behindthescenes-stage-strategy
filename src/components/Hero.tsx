@@ -4,7 +4,18 @@ import { Sparkles } from 'lucide-react';
 
 const Hero = () => {
   const { t } = useLanguage();
-
+<div className="absolute inset-0 -z-10">
+  <video
+    src={heroVideo}
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="w-full h-full object-cover"
+  />
+  {/* Overlay para mejorar contraste del texto */}
+  <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/50" />
+</div>
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Clean Background - ready for your video upload */}
