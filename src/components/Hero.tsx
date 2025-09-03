@@ -1,6 +1,7 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { Sparkles } from 'lucide-react';
+import heroBackgroundFrame from '@/assets/hero-background-frame.jpg';
 
 const Hero = () => {
   const { t } = useLanguage();
@@ -11,6 +12,7 @@ const Hero = () => {
       <div className="absolute inset-0 -z-10">
         <video
           src="/hero-background-video.mp4"
+          poster={heroBackgroundFrame}
           autoPlay
           muted
           loop
