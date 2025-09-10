@@ -27,10 +27,6 @@ const Clients = () => {
       logo: '/lovable-uploads/2c86cd0e-b9ef-4759-aead-6effbfbf1f12.png'
     },
     {
-      name: 'GREC Festival',
-      logo: '/lovable-uploads/d0aa4f42-a2e4-4a4e-9d15-0f75031de837.png'
-    },
-    {
       name: 'Jackies',
       logo: '/lovable-uploads/200db334-408f-4224-ae5d-da3f1a705e31.png'
     },
@@ -84,13 +80,9 @@ const Clients = () => {
                     <img 
                       src={client.logo} 
                       alt={client.name}
-                      className="max-w-full max-h-full object-contain filter 
-                                 group-hover:brightness-110 group-hover:contrast-110
-                                 transition-all duration-300 drop-shadow-sm"
-                      style={{
-                        filter: client.name === 'GREC Festival' ? 'hue-rotate(10deg) saturate(1.1)' :
-                                'none'
-                      }}
+                       className="max-w-full max-h-full object-contain filter 
+                                  group-hover:brightness-110 group-hover:contrast-110
+                                  transition-all duration-300 drop-shadow-sm"
                     />
                   </div>
                 </CarouselItem>

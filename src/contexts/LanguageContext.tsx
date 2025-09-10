@@ -47,7 +47,7 @@ const translations = {
     'clients.title': 'Nuestros clientes',
     
     // Team
-    'team.title': 'Quién somos',
+    'team.title': 'Nosotros',
     'team.subtitle': 'Nuestro equipo combina experiencia en estrategia, marketing y operaciones con una pasión común: hacer crecer proyectos culturales y de entretenimiento.',
     'team.andrea.role': 'Estrategia y desarrollo de negocio',
     'team.alexia.role': 'Marketing y comunicación',
