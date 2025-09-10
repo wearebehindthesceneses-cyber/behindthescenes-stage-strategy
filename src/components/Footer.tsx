@@ -14,7 +14,7 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: Instagram, href: 'https://instagram.com/behindthescenes.es', label: 'Instagram' },
-    { icon: Linkedin, href: 'https://linkedin.com/company/behindthescenes', label: 'LinkedIn' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/company/webehind/', label: 'LinkedIn' },
     { icon: Mail, href: 'mailto:hello@behindthescenes.es', label: 'Email' },
   ];
 
