@@ -21,13 +21,21 @@ const Hero = () => {
 
       {/* Video Background Block - Ready for Visual Edits Upload */}
       <div className="absolute inset-0 -z-10">
-        <Video
-          src="/hero-video.mp4"
-          poster={heroBackgroundFrame}
-          className="opacity-60"
-          overlay={true}
-          overlayOpacity={0.1}
+        <video
+        className="absolute inset-0 h-full w-full object-cover"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        poster="/media/hero-poster.jpg"
+        aria-hidden="true"
+      >
+        <source
+          src="https://drive.usercontent.google.com/uc?id=1cr2RybZw0szDMQD2hQM3-LiYGpkcO0tI&export=download"
+          type="video/mp4"
         />
+      </video>
       </div>
       
       <div className="container mx-auto px-6 text-center relative z-10">
