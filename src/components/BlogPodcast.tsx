@@ -14,8 +14,8 @@ const BlogPodcast = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Blog Section */}
           <div className="fade-in-up">
-            <div className="bg-card/60 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-border/50 h-full
-                           hover:shadow-xl transition-all duration-300 hover:border-primary/30">
+            <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-3xl p-8 border border-border/30 h-full
+                           hover:shadow-xl transition-all duration-300 hover:from-primary/15 hover:to-secondary/15">
               <div className="flex items-center mb-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-2xl flex items-center justify-center mr-4 border border-border/20">
                   <BookOpen className="text-blue-500" size={32} />
@@ -30,7 +30,10 @@ const BlogPodcast = () => {
                 {t('blog.description')}
               </p>
               
-              <Button variant="outline" className="group border-border/50 hover:border-primary/50">
+              <Button 
+                className="btn-hero group"
+                onClick={() => window.location.href = '/blog'}
+              >
                 {t('blog.button')}
                 <ExternalLink className="ml-2 group-hover:translate-x-1 transition-transform duration-300" size={16} />
               </Button>
