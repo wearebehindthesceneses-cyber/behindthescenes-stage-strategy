@@ -26,7 +26,7 @@ const Clients = () => {
     },
     {
       name: 'Jackies',
-      logo: '/lovable-uploads/1b14393c-6f45-4114-a811-dfecff337158.png'
+      logo: '/lovable-uploads/200db334-408f-4224-ae5d-da3f1a705e31.png'
     },
     {
       name: 'El Dorado',
