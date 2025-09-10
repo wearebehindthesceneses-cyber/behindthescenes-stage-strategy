@@ -40,7 +40,7 @@ const BlogPost1 = () => {
               <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
                 <div className="flex items-center gap-1">
                   <Calendar size={14} />
-                  <span>1 de diciembre, 2024</span>
+                  <span>1 de junio, 2025</span>
                 </div>
                 <div className="flex items-center gap-1">
                   <Clock size={14} />
@@ -70,37 +70,37 @@ const BlogPost1 = () => {
               <div className="text-muted-foreground leading-relaxed space-y-6">
                 
                 <p>
-                  El precio de una entrada no es solo un número: es una decisión estratégica que puede determinar el éxito de un espectáculo. En un sector donde los márgenes son ajustados y la competencia es intensa, aplicar una estrategia de precios adecuada permite aumentar los ingresos y a la vez acercar la cultura a diferentes públicos.
+                  El precio de una entrada no es solo un número: es una decisión estratégica que puede determinar el éxito de un espectáculo. En un sector donde los márgenes son ajustados y la competencia es intensa, aplicar una estrategia de precios adecuada permite aumentar los ingresos y acercar la cultura a más públicos.
                 </p>
 
                 <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">1. Conoce a tu público</h2>
                 <p>
-                  Antes de fijar precios, es esencial entender quién está al otro lado. No es lo mismo un festival dirigido a estudiantes que una ópera para un público internacional. Identificar segmentos como familias, turistas o jóvenes locales ayuda a adaptar los precios a su disposición de pago y a crear ofertas personalizadas.
+                  Antes de fijar precios, es esencial entender quién está al otro lado. No es lo mismo un festival dirigido a estudiantes que una ópera para un público internacional. Segmentar por perfiles (familias, turistas, jóvenes locales) permite adaptar precios y crear ofertas personalizadas.
                 </p>
 
                 <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">2. Ofrece diferentes niveles de precios</h2>
                 <p>
-                  Un solo precio limita tus opciones. Diseñar varios niveles (gradas económicas, platea estándar, experiencias VIP) permite ampliar la base de público. Cada nivel debe incluir un valor añadido: mejor visibilidad, acceso a un meet & greet o incluso un merchandising exclusivo.
+                  Diseñar varios niveles (entrada básica, estándar, VIP) amplía el espectro de asistentes. Cada nivel debe tener un valor añadido: mejor visibilidad, merchandising exclusivo o un meet & greet. Esto no solo maximiza ingresos, sino que aumenta la percepción de exclusividad.
                 </p>
 
                 <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">3. Introduce precios dinámicos</h2>
                 <p>
-                  El precio no tiene que ser fijo. Al igual que en aerolíneas o hoteles, los espectáculos pueden ajustar sus tarifas en función de la demanda y la proximidad al evento. Si la preventa es baja, se pueden lanzar descuentos estratégicos; si la demanda sube, los precios se incrementan.
+                  Inspirado en aerolíneas y hoteles, el <em>dynamic pricing</em> ajusta tarifas según la demanda. Broadway y los grandes festivales ya lo aplican: precios más altos en temporada alta y descuentos en funciones menos concurridas.
                 </p>
 
-                <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">4. Diseña promociones inteligentes</h2>
+                <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">4. Promociones inteligentes</h2>
                 <p>
-                  Los descuentos funcionan mejor cuando están bien segmentados. Un 2x1 puntual en martes puede atraer nuevos públicos sin dañar la percepción de valor. Los packs familiares, los descuentos a estudiantes o las colaboraciones con influencers para cupones exclusivos son recursos eficaces para diversificar audiencia.
+                  Los descuentos deben ser estratégicos. Un 2x1 en martes puede llenar butacas vacías sin devaluar el producto. Colaborar con influencers o lanzar cupones exclusivos en redes sociales también abre nuevas audiencias.
                 </p>
 
-                <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">5. Mide y optimiza constantemente</h2>
+                <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">5. Mide y optimiza</h2>
                 <p>
-                  Una estrategia de precios nunca es definitiva. Es clave monitorizar métricas como la tasa de ocupación, el ingreso medio por espectador o la conversión de campañas. Con esos datos, se pueden ajustar precios en tiempo real y mejorar la estrategia para próximas ediciones.
+                  Monitorizar métricas como la tasa de ocupación o el ingreso medio por espectador es clave. Con datos en mano, se pueden ajustar precios en tiempo real y planificar mejor futuros espectáculos.
                 </p>
 
                 <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">Conclusión</h2>
                 <p>
-                  Una buena política de precios no consiste en bajar tarifas, sino en encontrar el equilibrio entre rentabilidad y accesibilidad. Con un enfoque estratégico, es posible llenar butacas, llegar a nuevos públicos y garantizar la sostenibilidad del proyecto cultural.
+                  Una política de precios eficaz no consiste en bajar tarifas, sino en equilibrar accesibilidad y rentabilidad. Bien diseñada, puede llenar butacas, diversificar públicos y garantizar la sostenibilidad del proyecto.
                 </p>
               </div>
             </article>

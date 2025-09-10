@@ -47,7 +47,7 @@ const BlogPost3 = () => {
               <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
                 <div className="flex items-center gap-1">
                   <Calendar size={14} />
-                  <span>15 de noviembre, 2024</span>
+                  <span>1 de agosto, 2025</span>
                 </div>
                 <div className="flex items-center gap-1">
                   <Clock size={14} />
@@ -75,39 +75,44 @@ const BlogPost3 = () => {
           <div className="container mx-auto px-6">
             <article className="max-w-4xl mx-auto prose prose-lg">
               <div className="text-muted-foreground leading-relaxed space-y-6">
-                <h2 className="text-2xl font-semibold text-foreground mb-4">Introducción</h2>
                 <p>
-                  TikTok ha transformado la forma en la que descubrimos contenido cultural. Lo que antes pasaba por televisión o carteles en la calle, ahora se viraliza en vídeos de 15 segundos. Para el sector cultural, esta plataforma es una oportunidad única para atraer a nuevas generaciones y convertir likes en entradas vendidas.
+                  TikTok ya no es solo la red de bailes virales: es una de las plataformas más influyentes para descubrir música, tendencias y experiencias. Para los espectáculos culturales, representa una oportunidad única para atraer nuevas generaciones y convertir visualizaciones en entradas vendidas.
                 </p>
 
-                <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">1. Comprende el lenguaje de TikTok</h2>
+                <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">1. Habla el lenguaje de TikTok</h2>
                 <p>
-                  El algoritmo premia la autenticidad y la frescura. Los vídeos deben ser breves, con un hook fuerte en los primeros segundos y un estilo cercano. Los espectadores no buscan anuncios tradicionales, sino experiencias con las que puedan identificarse o entretenerse.
+                  En esta red, los usuarios esperan autenticidad. Los vídeos deben ser breves (15–30 segundos), con un <em>hook</em> potente al inicio. Un tráiler tradicional no funciona; lo que conecta son momentos espontáneos, cercanos y fáciles de compartir.
                 </p>
 
-                <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">2. Crea contenido atractivo del espectáculo</h2>
+                <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">2. Contenido que funciona en cultura</h2>
                 <p>
-                  El backstage funciona muy bien: ensayos, preparación de vestuario, montaje de luces. También los fragmentos destacados del show, siempre sin revelar demasiado. Los testimonios del equipo técnico o artístico aportan humanidad. Y por último, adaptar trends o challenges aporta viralidad.
+                  Algunos formatos efectivos:
+                </p>
+                <ul className="list-disc ml-6 mb-4">
+                  <li>Ensayos y backstage (la magia detrás del telón).</li>
+                  <li>Clips impactantes del espectáculo (sin revelar demasiado).</li>
+                  <li>Testimonios de artistas o técnicos en primera persona.</li>
+                  <li>Adaptación de tendencias y challenges virales al universo del show.</li>
+                </ul>
+
+                <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">3. Estrategia de publicación constante</h2>
+                <p>
+                  Publicar de forma regular aumenta la probabilidad de viralidad. Lo recomendable es mínimo 3 veces por semana, combinando distintos formatos: POV, entrevistas rápidas o reacciones del público en directo.
                 </p>
 
-                <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">3. Diseña una estrategia de publicación</h2>
+                <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">4. Potencia con TikTok Ads</h2>
                 <p>
-                  No basta con subir un vídeo de vez en cuando. Publicar varias veces por semana aumenta las posibilidades de viralidad. Alternar formatos (clips de espectáculo, entrevistas rápidas, POV del público) ayuda a mantener variedad y frescura.
+                  Además del alcance orgánico, TikTok Ads ofrece segmentación avanzada. Un espectáculo en Madrid puede dirigirse a jóvenes de 18–30 años interesados en música, teatro o entretenimiento. Los In-Feed Ads, que se integran en el feed, son los más efectivos para eventos locales.
                 </p>
 
-                <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">4. Activa campañas de TikTok Ads</h2>
+                <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">5. Mide resultados y ajusta</h2>
                 <p>
-                  Además del alcance orgánico, TikTok ofrece opciones de pago muy efectivas para espectáculos locales. Con geolocalización se puede impactar a usuarios en la ciudad del evento. Los In-Feed Ads son casi indistinguibles del contenido orgánico y tienen gran tasa de visualización.
-                </p>
-
-                <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">5. Mide y optimiza</h2>
-                <p>
-                  Como en cualquier estrategia digital, lo que no se mide no se mejora. Analizar el engagement (likes, comentarios, compartidos) y el tráfico a la página de venta permite calcular el ROI. Ajustar contenidos en función de estos datos es lo que convierte a TikTok en una herramienta de venta real.
+                  Analizar métricas como visualizaciones, interacciones y clics en el enlace de venta permite calcular el ROI. Con estos datos, puedes ajustar la estrategia: más vídeos backstage si son los que generan más engagement, o más Ads geolocalizados si impulsan conversiones.
                 </p>
 
                 <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">Conclusión</h2>
                 <p>
-                  TikTok no es solo entretenimiento: es un escaparate cultural con millones de usuarios activos. Usado con estrategia, puede transformar la visibilidad de un espectáculo y convertir a nuevas audiencias digitales en público presencial.
+                  TikTok es el puente entre la cultura y nuevas audiencias. Integrar esta plataforma en la estrategia de un espectáculo puede marcar la diferencia entre un estreno discreto y un lleno absoluto.
                 </p>
               </div>
             </article>

@@ -47,7 +47,7 @@ const BlogPost2 = () => {
               <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
                 <div className="flex items-center gap-1">
                   <Calendar size={14} />
-                  <span>20 de noviembre, 2024</span>
+                  <span>1 de julio, 2025</span>
                 </div>
                 <div className="flex items-center gap-1">
                   <Clock size={14} />
@@ -75,39 +75,47 @@ const BlogPost2 = () => {
           <div className="container mx-auto px-6">
             <article className="max-w-4xl mx-auto prose prose-lg">
               <div className="text-muted-foreground leading-relaxed space-y-6">
-                <h2 className="text-2xl font-semibold text-foreground mb-4">Introducción</h2>
                 <p>
-                  La visibilidad de un espectáculo no depende solo de su calidad artística. Para que el público se entere, es necesario que los medios hablen de él. Conseguir cobertura en prensa, blogs especializados y radios culturales puede ser la diferencia entre un estreno silencioso y un evento comentado en toda la ciudad.
+                  La calidad artística de un espectáculo es fundamental, pero si nadie se entera de que existe, puede pasar desapercibido. Conseguir cobertura en medios —prensa, blogs especializados, radios y TV— es la mejor forma de posicionar un proyecto cultural en la agenda pública.
                 </p>
 
-                <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">1. Define tu historia</h2>
+                <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">1. Encuentra tu historia noticiosa</h2>
                 <p>
-                  Los medios buscan historias, no carteles. Antes de enviar nada, piensa qué hace a tu espectáculo único: ¿es innovador en formato?, ¿tiene un impacto social relevante?, ¿participan artistas reconocidos? Cuanto más clara sea la narrativa, más atractivo será para un periodista.
+                  Los periodistas buscan relatos únicos. ¿Qué tiene tu espectáculo que lo hace diferente? Puede ser un enfoque innovador, un impacto social o la participación de artistas reconocidos. Cuanto más claro y atractivo sea tu ángulo, más opciones tendrás de que se publique.
                 </p>
 
-                <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">2. Prepara un kit de prensa profesional</h2>
+                <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">2. Prepara un kit de prensa completo</h2>
                 <p>
-                  No basta con enviar un texto por correo. Un kit de prensa debe incluir una nota clara con titular llamativo, fotos en alta calidad, biografías del equipo y datos prácticos (fecha, lugar, entradas). Este material facilita la labor del periodista y aumenta las probabilidades de publicación.
+                  Un buen kit debe incluir:
+                </p>
+                <ul className="list-disc ml-6 mb-4">
+                  <li>Nota con titular llamativo.</li>
+                  <li>Fotografías y vídeos en alta resolución.</li>
+                  <li>Biografías del equipo artístico.</li>
+                  <li>Información práctica (fechas, lugar, cómo comprar entradas).</li>
+                </ul>
+                <p>
+                  Facilitar el trabajo al periodista aumenta mucho las probabilidades de cobertura.
                 </p>
 
-                <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">3. Construye relaciones con periodistas</h2>
+                <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">3. Crea relaciones con periodistas</h2>
                 <p>
-                  El error más común es enviar correos masivos. Funciona mucho mejor investigar qué periodistas cubren cultura, personalizar los mensajes y dar seguimiento cercano. Las relaciones auténticas son más efectivas que cien envíos sin contexto.
+                  No se trata de enviar cientos de correos, sino de construir confianza. Identifica qué medios y periodistas cubren cultura, personaliza los mensajes y mantén un contacto continuo. Una llamada de seguimiento o una invitación al ensayo puede marcar la diferencia.
                 </p>
 
-                <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">4. Refuerza con redes sociales</h2>
+                <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">4. Multiplica el impacto en redes</h2>
                 <p>
-                  Hoy en día, los medios también miran redes. Comparte las apariciones que consigas, etiqueta a periodistas y medios y crea contenido que complemente la cobertura. Esto multiplica el alcance y genera un efecto de validación social.
+                  La prensa y las redes están cada vez más conectadas. Compartir artículos, etiquetar medios y crear contenido complementario refuerza la cobertura. Ejemplo: si un diario local te menciona, publícalo en Instagram Stories y etiquétalos: generas reciprocidad y mayor alcance.
                 </p>
 
-                <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">5. Cuida el timing</h2>
+                <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">5. El timing lo es todo</h2>
                 <p>
-                  Una nota de prensa enviada el día del estreno llega tarde. Lo ideal es contactar con antelación (al menos 2–3 semanas antes), reforzar en la semana del estreno y asegurar reseñas posteriores. El calendario es tan importante como el mensaje.
+                  Los envíos masivos el mismo día del estreno rara vez funcionan. Lo ideal es calendarizar: un primer contacto 2–3 semanas antes, recordatorio en la semana del estreno y seguimiento posterior para reseñas.
                 </p>
 
                 <h2 className="text-2xl font-semibold text-foreground mb-4 mt-8">Conclusión</h2>
                 <p>
-                  Lograr cobertura en medios no se trata de suerte, sino de estrategia. Con una narrativa clara, un kit profesional y relaciones cuidadas, cualquier espectáculo puede convertirse en noticia y ganar el espacio que merece en la agenda cultural.
+                  La cobertura mediática no es cuestión de suerte, sino de estrategia. Un buen relato, materiales preparados y relaciones sólidas pueden transformar un estreno modesto en un evento que marque tendencia en la ciudad.
                 </p>
               </div>
             </article>
