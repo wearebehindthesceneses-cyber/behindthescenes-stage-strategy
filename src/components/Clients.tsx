@@ -1,4 +1,10 @@
 import { useLanguage } from '@/contexts/LanguageContext';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const Clients = () => {
   const { t } = useLanguage();
@@ -39,41 +45,58 @@ const Clients = () => {
   ];
 
   return (
-    <section id="projects" className="py-section bg-gradient-to-br from-secondary/5 via-background to-muted/30 relative">
+    <section id="projects" className="py-section bg-gradient-to-br from-orange-500/10 via-background to-amber-500/10 relative">
       {/* Section separator */}
       <div className="section-separator mb-16"></div>
       
       {/* Decorative gradient orbs */}
-      <div className="absolute top-20 right-20 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-20 left-20 w-32 h-32 bg-secondary/10 rounded-full blur-2xl"></div>
+      <div className="absolute top-20 right-20 w-40 h-40 bg-orange-500/20 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-20 left-20 w-32 h-32 bg-amber-500/20 rounded-full blur-2xl"></div>
+      
+      {/* Animated background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-r from-orange-500/5 via-transparent to-amber-500/5 animate-pulse"></div>
       
       <div className="container mx-auto px-6">
         <h2 className="section-title fade-in-up mb-16">
           {t('clients.title')}
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-20 items-center justify-items-center max-w-7xl mx-auto">
-          {clients.map((client, index) => (
-            <div
-              key={index}
-              className="bg-card/60 backdrop-blur-sm rounded-3xl p-12 w-56 h-56 flex items-center justify-center 
-                         hover:shadow-2xl hover:-translate-y-3 transition-all duration-300 
-                         border border-border/30 hover:border-primary/40 fade-in-up group
-                         hover:bg-card/80"
-            >
-              <img 
-                src={client.logo} 
-                alt={client.name}
-                className="max-w-full max-h-full object-contain filter 
-                           group-hover:brightness-110 group-hover:contrast-110
-                           transition-all duration-300 drop-shadow-sm"
-                style={{
-                  filter: client.name === 'GREC Festival' ? 'hue-rotate(10deg) saturate(1.1)' :
-                          'none'
-                }}
-              />
-            </div>
-          ))}
+        <div className="max-w-6xl mx-auto">
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            plugins={[
+              Autoplay({
+                delay: 2000,
+              }),
+            ]}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {clients.map((client, index) => (
+                <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+                  <div className="bg-card/60 backdrop-blur-sm rounded-3xl p-8 w-full h-48 flex items-center justify-center 
+                                 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 
+                                 border border-border/30 hover:border-orange-400/40 fade-in-up group
+                                 hover:bg-card/80">
+                    <img 
+                      src={client.logo} 
+                      alt={client.name}
+                      className="max-w-full max-h-full object-contain filter 
+                                 group-hover:brightness-110 group-hover:contrast-110
+                                 transition-all duration-300 drop-shadow-sm"
+                      style={{
+                        filter: client.name === 'GREC Festival' ? 'hue-rotate(10deg) saturate(1.1)' :
+                                'none'
+                      }}
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
         </div>
       </div>
     </section>
