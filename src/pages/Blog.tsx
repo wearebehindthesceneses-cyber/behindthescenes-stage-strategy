@@ -116,10 +116,16 @@ const Blog = () => {
                         <span>{post.author}</span>
                       </div>
                       
-                      <Button variant="outline" size="sm" className="group/btn">
-                        Leer más
-                        <ArrowLeft className="ml-2 rotate-180 group-hover/btn:translate-x-1 transition-transform duration-300" size={14} />
-                      </Button>
+                      <Link to={
+                        post.id === 1 ? "/blog/estrategia-precios-espectaculos" :
+                        post.id === 2 ? "/blog/cobertura-medios-espectaculos-culturales" :
+                        "/blog/tiktok-espectaculos-entradas"
+                      }>
+                        <Button variant="outline" size="sm" className="group/btn">
+                          Leer más
+                          <ArrowLeft className="ml-2 rotate-180 group-hover/btn:translate-x-1 transition-transform duration-300" size={14} />
+                        </Button>
+                      </Link>
                     </div>
                   </div>
                 </article>
