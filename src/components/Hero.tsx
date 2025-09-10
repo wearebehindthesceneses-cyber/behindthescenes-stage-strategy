@@ -22,7 +22,7 @@ const Hero = () => {
       {/* Video Background Block - Ready for Visual Edits Upload */}
       <div className="absolute inset-0 -z-10">
         <Video
-          src="/hero-video.mp4"
+          src="https://drive.google.com/file/d/1cr2RybZw0szDMQD2hQM3-LiYGpkcO0tI/view"
           poster={heroBackgroundFrame}
           className="opacity-60"
           overlay={true}
