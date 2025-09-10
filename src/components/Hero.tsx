@@ -16,13 +16,13 @@ const Hero = () => {
       className="min-h-screen flex items-center justify-center relative overflow-hidden"
     >
       {/* Theater Curtain Background */}
-      <div className="absolute inset-0 -z-20">
+      {/*<div className="absolute inset-0 -z-20">
         <img
           src={theaterCurtainBackground}
           alt="Theater curtain background"
           className="w-full h-full object-cover brightness-150"
         />
-      </div>
+      </div>*/}
 
       {/* Video Background */}
       <div className="absolute inset-0 -z-10">
