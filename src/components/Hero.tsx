@@ -34,11 +34,6 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/40" />
       </div>
       
-      {/* Decorative elements */}
-      <div className="absolute top-20 left-20 w-32 h-32 bg-primary/10 rounded-full blur-2xl"></div>
-      <div className="absolute bottom-20 right-20 w-40 h-40 bg-secondary/10 rounded-full blur-3xl"></div>
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-60 h-60 bg-primary/5 rounded-full blur-3xl"></div>
-
       <div className="container mx-auto px-6 text-center relative z-10">
         {/* Logo */}
         <div className="flex justify-center mb-8">

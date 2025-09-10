@@ -135,15 +135,7 @@
            hover:border-primary/30 hover:shadow-primary/10;
   }
   
-  /* Section Separator */
-  .section-separator {
-    @apply relative;
-  }
-  
-  .section-separator::before {
-    content: '';
-    @apply absolute top-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-primary to-secondary rounded-full;
-  }
+  /* Section Separator - Removed to avoid unwanted visual effects */
   
   /* Animation Classes */
   .fade-in-up {
