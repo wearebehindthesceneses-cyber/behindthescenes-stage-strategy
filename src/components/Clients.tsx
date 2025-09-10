@@ -57,40 +57,23 @@ const Clients = () => {
           {t('clients.title')}
         </h2>
 
-        <div className="max-w-6xl mx-auto">
-          <Carousel
-            opts={{
-              align: "start",
-              loop: true,
-            }}
-            plugins={[
-              Autoplay({
-                delay: 0,
-                stopOnInteraction: false,
-                stopOnMouseEnter: false,
-              }),
-            ]}
-            className="w-full overflow-hidden"
-          >
-            <CarouselContent className="-ml-2 md:-ml-4 animate-[scroll_30s_linear_infinite]">
-              {[...clients, ...clients].map((client, index) => (
-                <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/3 md:basis-1/4 lg:basis-1/5 xl:basis-1/6">
-                  <div className="bg-card/60 backdrop-blur-sm rounded-3xl p-8 w-full h-48 flex items-center justify-center 
-                                 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 
-                                 border border-border/30 hover:border-orange-400/40 fade-in-up group
-                                 hover:bg-card/80">
-                    <img 
-                      src={client.logo} 
-                      alt={client.name}
-                       className="max-w-full max-h-full object-contain filter 
-                                  group-hover:brightness-110 group-hover:contrast-110
-                                  transition-all duration-300 drop-shadow-sm"
-                    />
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-          </Carousel>
+        <div className="max-w-6xl mx-auto overflow-hidden">
+          {/* Continuous marquee scroll */}
+          <div className="flex animate-marquee space-x-8">
+            {[...clients, ...clients, ...clients].map((client, index) => (
+              <div key={index} className="flex-shrink-0 w-48">
+                <div className="bg-card/60 backdrop-blur-sm rounded-3xl p-6 h-32 flex items-center justify-center 
+                               border border-border/30 group">
+                  <img 
+                    src={client.logo} 
+                    alt={client.name}
+                    className="max-w-full max-h-full object-contain filter 
+                               transition-all duration-300 drop-shadow-sm"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

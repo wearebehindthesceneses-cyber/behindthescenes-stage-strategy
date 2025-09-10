@@ -14,9 +14,8 @@ const Hero = () => {
         <img
           src={theaterCurtainBackground}
           alt="Theater curtain background"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover brightness-150"
         />
-        <div className="absolute inset-0 bg-black/5" />
       </div>
 
       {/* Video Background Block - Ready for Visual Edits Upload */}
@@ -28,10 +27,10 @@ const Hero = () => {
           muted
           loop
           playsInline
-          className="w-full h-full object-cover opacity-70"
+          className="w-full h-full object-cover opacity-60"
         />
-        {/* Overlay para mantener contraste del texto */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/40" />
+        {/* Minimal overlay for text contrast */}
+        <div className="absolute inset-0 bg-black/10" />
       </div>
       
       <div className="container mx-auto px-6 text-center relative z-10">

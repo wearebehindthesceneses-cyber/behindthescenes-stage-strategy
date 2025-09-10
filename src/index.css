@@ -76,6 +76,16 @@
     }
   }
 
+  /* Marquee animation for client logos */
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
   * {
     @apply border-border;
   }
@@ -141,8 +151,13 @@
   .fade-in-up {
     @apply opacity-0 translate-y-8 transition-all duration-700;
   }
-  
+
   .fade-in-up.in-view {
     @apply opacity-100 translate-y-0;
+  }
+
+  /* Marquee animation */
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
   }
 }
