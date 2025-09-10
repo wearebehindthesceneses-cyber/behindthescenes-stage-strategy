@@ -126,10 +126,10 @@
   
   /* Button Variants */
   .btn-hero {
-    @apply bg-secondary text-secondary-foreground hover:bg-secondary/90 
+    @apply bg-[#D4AF37] text-black hover:bg-[#D4AF37]/90 
            font-inter font-semibold px-8 py-4 rounded-full 
            transition-all duration-300 hover:scale-105 hover:shadow-lg
-           shadow-md hover:shadow-secondary/20;
+           shadow-md hover:shadow-[#D4AF37]/20;
   }
   
   .btn-secondary {
