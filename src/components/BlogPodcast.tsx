@@ -14,11 +14,11 @@ const BlogPodcast = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Blog Section */}
           <div className="fade-in-up">
-            <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-3xl p-8 border border-border/30 h-full
-                           hover:shadow-xl transition-all duration-300 hover:from-primary/15 hover:to-secondary/15">
+            <div className="bg-gradient-to-br from-purple-500/10 to-violet-500/10 rounded-3xl p-8 border border-border/30 h-full
+                           hover:shadow-xl transition-all duration-300 hover:from-purple-500/15 hover:to-violet-500/15">
               <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-2xl flex items-center justify-center mr-4 border border-border/20">
-                  <BookOpen className="text-blue-500" size={32} />
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-500/20 to-violet-500/20 rounded-2xl flex items-center justify-center mr-4 border border-border/20">
+                  <BookOpen className="text-purple-500" size={32} />
                 </div>
                 <div>
                   <h3 className="section-subtitle mb-2">{t('nav.blog')}</h3>
@@ -42,11 +42,11 @@ const BlogPodcast = () => {
 
           {/* Podcast Section */}
           <div id="podcast" className="fade-in-up">
-            <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-3xl p-8 border border-border/30 h-full
-                           hover:shadow-xl transition-all duration-300 hover:from-primary/15 hover:to-secondary/15">
+            <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 rounded-3xl p-8 border border-border/30 h-full
+                           hover:shadow-xl transition-all duration-300 hover:from-blue-500/15 hover:to-cyan-500/15">
               <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-500/20 to-red-500/20 rounded-2xl flex items-center justify-center mr-4 border border-border/20">
-                  <Podcast className="text-orange-500" size={32} />
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-500/20 to-violet-500/20 rounded-2xl flex items-center justify-center mr-4 border border-border/20">
+                  <Podcast className="text-purple-500" size={32} />
                 </div>
                 <div>
                   <h3 className="section-subtitle mb-2">{t('podcast.title')}</h3>

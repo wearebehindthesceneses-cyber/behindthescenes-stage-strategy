@@ -41,16 +41,16 @@ const Clients = () => {
   ];
 
   return (
-    <section id="projects" className="py-section bg-gradient-to-br from-orange-500/10 via-background to-amber-500/10 relative">
+    <section id="projects" className="py-section bg-gradient-to-br from-red-500/10 via-background to-red-600/10 relative">
       {/* Section separator */}
       <div className="section-separator mb-16"></div>
       
       {/* Decorative gradient orbs */}
-      <div className="absolute top-20 right-20 w-40 h-40 bg-orange-500/20 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-20 left-20 w-32 h-32 bg-amber-500/20 rounded-full blur-2xl"></div>
+      <div className="absolute top-20 right-20 w-40 h-40 bg-red-500/20 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-20 left-20 w-32 h-32 bg-red-600/20 rounded-full blur-2xl"></div>
       
       {/* Animated background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-orange-500/5 via-transparent to-amber-500/5 animate-pulse"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-red-500/5 via-transparent to-red-600/5 animate-pulse"></div>
       
       <div className="container mx-auto px-6">
         <h2 className="section-title fade-in-up mb-16">
