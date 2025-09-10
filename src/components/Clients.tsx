@@ -65,14 +65,16 @@ const Clients = () => {
             }}
             plugins={[
               Autoplay({
-                delay: 2000,
+                delay: 0,
+                stopOnInteraction: false,
+                stopOnMouseEnter: false,
               }),
             ]}
-            className="w-full"
+            className="w-full overflow-hidden"
           >
-            <CarouselContent className="-ml-2 md:-ml-4">
-              {clients.map((client, index) => (
-                <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+            <CarouselContent className="-ml-2 md:-ml-4 animate-[scroll_30s_linear_infinite]">
+              {[...clients, ...clients].map((client, index) => (
+                <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/3 md:basis-1/4 lg:basis-1/5 xl:basis-1/6">
                   <div className="bg-card/60 backdrop-blur-sm rounded-3xl p-8 w-full h-48 flex items-center justify-center 
                                  hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 
                                  border border-border/30 hover:border-orange-400/40 fade-in-up group

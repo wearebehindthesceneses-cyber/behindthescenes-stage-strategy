@@ -34,11 +34,10 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
-        <AboutUs />
         <Services />
+        <AboutUs />
         <Clients />
         <BlogPodcast />
-        <CTA />
         <Contact />
       </main>
       <Footer />

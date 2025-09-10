@@ -30,8 +30,8 @@ const Services = () => {
       icon: TrendingUp,
       titleKey: 'services.marketing.title',
       descKey: 'services.marketing.desc',
-      gradient: 'from-primary/20 to-purple-500/20',
-      iconColor: 'text-primary'
+      gradient: 'from-violet-400/30 to-purple-400/30',
+      iconColor: 'text-violet-600'
     },
     {
       icon: Megaphone,
