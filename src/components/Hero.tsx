@@ -76,8 +76,7 @@ const Hero = () => {
         {/* Main Title */}
         <div className="max-w-4xl mx-auto">
           <h1 className="hero-title mb-6 fade-in-up">
-            {t('hero.title')}{' '}
-            <Sparkles className="inline-block ml-2 text-secondary" size={40} />
+            {t('hero.title')}
           </h1>
 
           <p className="hero-subtitle mb-12 fade-in-up mx-auto">
