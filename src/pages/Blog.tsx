@@ -4,6 +4,9 @@ import { ArrowLeft, Calendar, Clock, User } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import pricingStrategyImage from '@/assets/pricing-strategy-blog.jpg';
+import mediaCoverageImage from '@/assets/media-coverage-blog.jpg';
+import tiktokTheaterImage from '@/assets/tiktok-theater-blog.jpg';
 
 const Blog = () => {
   const { t } = useLanguage();
@@ -11,33 +14,39 @@ const Blog = () => {
   const blogPosts = [
     {
       id: 1,
-      title: "El Futuro del Entertainment Business en España",
-      excerpt: "Exploramos las tendencias emergentes en la industria del entretenimiento y cómo están transformando el panorama empresarial español.",
-      date: "2024-03-15",
+      title: "Cómo diseñar una estrategia de precios que llene tu espectáculo o evento",
+      excerpt: "El precio de una entrada no es solo un número: es una decisión estratégica que puede determinar el éxito de un espectáculo. Aprende a fijar precios que maximicen ventas y atraigan nuevos públicos.",
+      date: "2024-12-01",
       author: "Andrea Pascual",
-      readTime: "5 min",
-      image: "/lovable-uploads/73c65180-49de-4afa-8763-8e69a589a8ab.png",
-      category: "Tendencias"
+      readTime: "8 min",
+      image: pricingStrategyImage,
+      category: "Estrategia",
+      metaTitle: "Estrategia de precios para espectáculos y eventos culturales en 2025",
+      metaDescription: "Aprende cómo fijar precios en cultura y entretenimiento para maximizar ventas y atraer nuevos públicos."
     },
     {
       id: 2,
-      title: "Estrategias de Marketing Digital para Eventos",
-      excerpt: "Descubre cómo maximizar el alcance y engagement de tus eventos a través de estrategias digitales innovadoras.",
-      date: "2024-03-10",
+      title: "Cómo lograr cobertura en medios para tu espectáculo cultural",
+      excerpt: "La visibilidad de un espectáculo no depende solo de su calidad artística. Conseguir cobertura en prensa, blogs especializados y radios culturales puede ser la diferencia entre un estreno silencioso y un evento comentado en toda la ciudad.",
+      date: "2024-11-20",
       author: "Andrea Pascual",
-      readTime: "7 min",
-      image: "/lovable-uploads/e36d2e3c-cdf3-4e5c-9fdd-3e788f837aa0.png",
-      category: "Marketing"
+      readTime: "6 min",
+      image: mediaCoverageImage,
+      category: "PR y Medios",
+      metaTitle: "Consejos para conseguir cobertura en prensa para espectáculos culturales",
+      metaDescription: "Descubre cómo aparecer en medios y dar visibilidad a tu espectáculo cultural con una estrategia de PR eficaz."
     },
     {
       id: 3,
-      title: "Behind the Scenes: Gestión de Proyectos Creativos",
-      excerpt: "Una mirada profunda a los procesos y metodologías que utilizamos para gestionar proyectos creativos exitosos.",
-      date: "2024-03-05",
+      title: "Cómo aprovechar TikTok para llenar butacas en tu espectáculo",
+      excerpt: "TikTok ha transformado la forma en la que descubrimos contenido cultural. Para el sector cultural, esta plataforma es una oportunidad única para atraer a nuevas generaciones y convertir likes en entradas vendidas.",
+      date: "2024-11-15",
       author: "Andrea Pascual", 
-      readTime: "6 min",
-      image: "/lovable-uploads/d433e341-9050-4f03-be64-3950020f1738.png",
-      category: "Gestión"
+      readTime: "7 min",
+      image: tiktokTheaterImage,
+      category: "Marketing Digital",
+      metaTitle: "TikTok para espectáculos: cómo vender más entradas en 2025",
+      metaDescription: "Aprende a usar TikTok para promocionar espectáculos culturales y conectar con nuevos públicos."
     }
   ];
 
