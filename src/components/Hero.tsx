@@ -32,7 +32,7 @@ const Hero = () => {
         aria-hidden="true"
       >
         <source
-          src="https://drive.usercontent.google.com/uc?id=1cr2RybZw0szDMQD2hQM3-LiYGpkcO0tI&export=download"
+          src="https://drive.google.com/file/d/1cr2RybZw0szDMQD2hQM3-LiYGpkcO0tI/view"
           type="video/mp4"
         />
       </video>
