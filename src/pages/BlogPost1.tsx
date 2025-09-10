@@ -5,12 +5,11 @@ import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import pricingStrategyImage from '@/assets/pricing-strategy-blog.jpg';
-
 const BlogPost1 = () => {
   useEffect(() => {
     // SEO Meta tags
     document.title = 'Estrategia de precios para espectáculos y eventos culturales en 2025';
-    
+
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
@@ -22,9 +21,7 @@ const BlogPost1 = () => {
       document.getElementsByTagName('head')[0].appendChild(meta);
     }
   }, []);
-
-  return (
-    <>
+  return <>
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
@@ -37,11 +34,7 @@ const BlogPost1 = () => {
               </Link>
               
               <div className="aspect-video overflow-hidden rounded-3xl mb-8">
-                <img 
-                  src={pricingStrategyImage} 
-                  alt="Teatro lleno de gente vista desde atrás"
-                  className="w-full h-full object-cover"
-                />
+                <img src={pricingStrategyImage} alt="Teatro lleno de gente vista desde atrás" className="w-full h-full object-cover" />
               </div>
 
               <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
@@ -75,7 +68,7 @@ const BlogPost1 = () => {
           <div className="container mx-auto px-6">
             <article className="max-w-4xl mx-auto prose prose-lg">
               <div className="text-muted-foreground leading-relaxed space-y-6">
-                <h2 className="text-2xl font-semibold text-foreground mb-4">Introducción</h2>
+                
                 <p>
                   El precio de una entrada no es solo un número: es una decisión estratégica que puede determinar el éxito de un espectáculo. En un sector donde los márgenes son ajustados y la competencia es intensa, aplicar una estrategia de precios adecuada permite aumentar los ingresos y a la vez acercar la cultura a diferentes públicos.
                 </p>
@@ -124,8 +117,6 @@ const BlogPost1 = () => {
         </section>
       </main>
       <Footer />
-    </>
-  );
+    </>;
 };
-
 export default BlogPost1;
