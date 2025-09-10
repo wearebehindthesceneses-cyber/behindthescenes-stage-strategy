@@ -1,5 +1,6 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
+import { Video } from '@/components/ui/video';
 import { Sparkles } from 'lucide-react';
 import heroBackgroundFrame from '@/assets/hero-background-frame.jpg';
 import theaterCurtainBackground from '@/assets/theater-curtain-background.jpg';
@@ -20,17 +21,13 @@ const Hero = () => {
 
       {/* Video Background Block - Ready for Visual Edits Upload */}
       <div className="absolute inset-0 -z-10">
-        <video
+        <Video
           src="/hero-background-video.mp4"
           poster={heroBackgroundFrame}
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="w-full h-full object-cover opacity-60"
+          className="opacity-60"
+          overlay={true}
+          overlayOpacity={0.1}
         />
-        {/* Minimal overlay for text contrast */}
-        <div className="absolute inset-0 bg-black/10" />
       </div>
       
       <div className="container mx-auto px-6 text-center relative z-10">
