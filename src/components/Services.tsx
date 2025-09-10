@@ -57,16 +57,16 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-section bg-gradient-to-br from-emerald-500/10 via-background to-teal-500/10 relative">
+    <section id="services" className="py-section bg-gradient-to-br from-yellow-500/10 via-background to-amber-500/10 relative">
       {/* Section separator */}
       <div className="section-separator mb-16"></div>
       
       {/* Decorative elements */}
-      <div className="absolute top-20 left-20 w-32 h-32 bg-emerald-500/20 rounded-full blur-2xl animate-pulse"></div>
-      <div className="absolute bottom-20 right-20 w-24 h-24 bg-teal-500/20 rounded-full blur-xl"></div>
+      <div className="absolute top-20 left-20 w-32 h-32 bg-yellow-500/20 rounded-full blur-2xl animate-pulse"></div>
+      <div className="absolute bottom-20 right-20 w-24 h-24 bg-amber-500/20 rounded-full blur-xl"></div>
       
       {/* Animated gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/5 via-transparent to-teal-500/5 animate-pulse"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/5 via-transparent to-amber-500/5 animate-pulse"></div>
       
       <div className="container mx-auto px-6">
         <h2 className="section-title fade-in-up mb-16">
