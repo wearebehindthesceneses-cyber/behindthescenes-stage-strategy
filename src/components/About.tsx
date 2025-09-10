@@ -15,11 +15,12 @@ const About = () => {
             {t('about.title')}
           </h2>
           
-          <div className="bg-card/60 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-lg border border-border/50 relative overflow-hidden">
-            {/* Gradient border effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-transparent to-secondary/20 rounded-3xl opacity-50"></div>
+          <div className="bg-gradient-to-br from-violet-500/10 via-card/60 to-blue-500/10 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-lg border border-border/50 relative overflow-hidden group hover:shadow-xl transition-all duration-500 hover:scale-[1.02]">
+            {/* Animated gradient border effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-violet-500/20 via-blue-500/20 to-purple-500/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div className="absolute -inset-1 bg-gradient-to-r from-violet-500/30 to-blue-500/30 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm -z-10"></div>
             
-            <p className="section-text fade-in-up leading-relaxed relative z-10">
+            <p className="section-text fade-in-up leading-relaxed relative z-10 group-hover:text-foreground transition-colors duration-300">
               {t('about.text')}
             </p>
           </div>
