@@ -9,10 +9,6 @@ const Clients = () => {
       logo: '/lovable-uploads/f563d0e5-b3b2-4467-b397-f84db0033e36.png'
     },
     {
-      name: 'Dreamtopia',
-      logo: '/lovable-uploads/79ee11dc-e411-4f47-91f3-0b280bd5d4aa.png'
-    },
-    {
       name: 'Circaya',
       logo: '/lovable-uploads/27ea0f9b-46f9-4dfc-9634-ad462c657563.png'
     },
@@ -35,10 +31,6 @@ const Clients = () => {
     {
       name: 'El Dorado',
       logo: '/lovable-uploads/73c65180-49de-4afa-8763-8e69a589a8ab.png'
-    },
-    {
-      name: 'Les Farfadais',
-      logo: '/lovable-uploads/les-farfadais-logo.png'
     },
     {
       name: 'Festival El Desvarío',
@@ -77,7 +69,6 @@ const Clients = () => {
                            transition-all duration-300 drop-shadow-sm"
                 style={{
                   filter: client.name === 'GREC Festival' ? 'hue-rotate(10deg) saturate(1.1)' :
-                          client.name === 'Jackies' ? 'hue-rotate(350deg) saturate(0.9)' :
                           'none'
                 }}
               />

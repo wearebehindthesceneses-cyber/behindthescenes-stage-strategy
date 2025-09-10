@@ -58,7 +58,16 @@ const Team = () => {
               {/* Name and role - centered */}
               <div className="flex flex-col items-center">
                 <h3 className="font-inter font-bold text-2xl mb-2 group-hover:text-primary transition-colors duration-300">
-                  {member.name}
+                  {member.name === 'Andrea Pascual' ? (
+                    <button 
+                      onClick={() => window.open('https://www.linkedin.com/in/pascualandrea/', '_blank')}
+                      className="hover:underline cursor-pointer"
+                    >
+                      {member.name}
+                    </button>
+                  ) : (
+                    member.name
+                  )}
                 </h3>
                 <p className="section-text text-muted-foreground text-center">{t(member.roleKey)}</p>
               </div>

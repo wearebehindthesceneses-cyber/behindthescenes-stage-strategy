@@ -2,12 +2,23 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { Sparkles } from 'lucide-react';
 import heroBackgroundFrame from '@/assets/hero-background-frame.jpg';
+import theaterCurtainBackground from '@/assets/theater-curtain-background.jpg';
 
 const Hero = () => {
   const { t } = useLanguage();
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      {/* Theater Curtain Background */}
+      <div className="absolute inset-0 -z-20">
+        <img
+          src={theaterCurtainBackground}
+          alt="Theater curtain background"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/50" />
+      </div>
+
       {/* Video Background Block - Ready for Visual Edits Upload */}
       <div className="absolute inset-0 -z-10">
         <video
@@ -17,7 +28,7 @@ const Hero = () => {
           muted
           loop
           playsInline
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover opacity-60"
         />
         {/* Overlay para mantener contraste del texto */}
         <div className="absolute inset-0 bg-black/40" />
@@ -54,13 +65,6 @@ const Hero = () => {
             >
               {t('hero.cta')}
             </Button>
-        </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-          <div className="w-6 h-10 border-2 border-muted-foreground/60 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-muted-foreground/60 rounded-full mt-2 animate-bounce" />
-          </div>
         </div>
       </div>
     </section>

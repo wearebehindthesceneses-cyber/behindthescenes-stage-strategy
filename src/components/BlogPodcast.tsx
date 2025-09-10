@@ -55,7 +55,10 @@ const BlogPodcast = () => {
                 {t('podcast.description')}
               </p>
               
-              <Button className="btn-hero group">
+              <Button 
+                className="btn-hero group"
+                onClick={() => window.open('https://open.spotify.com/show/0KyBKKnnb9P9xTiL6OUWe8?si=8626b9de3a2345bb', '_blank')}
+              >
                 {t('podcast.button')}
                 <ExternalLink className="ml-2 group-hover:translate-x-1 transition-transform duration-300" size={16} />
               </Button>

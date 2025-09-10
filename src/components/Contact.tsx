@@ -65,7 +65,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium">{t('contact.info.email')}</p>
-                    <p className="text-muted-foreground">hello@behindthescenes.es</p>
+                    <p className="text-muted-foreground">andrea@webehind.es</p>
                   </div>
                 </div>
                 
@@ -75,7 +75,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium">{t('contact.info.phone')}</p>
-                    <p className="text-muted-foreground">+34 XXX XXX XXX</p>
+                    <p className="text-muted-foreground">+34 644 49 29 21</p>
                   </div>
                 </div>
                 
@@ -85,7 +85,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium">{t('contact.info.location')}</p>
-                    <p className="text-muted-foreground">España</p>
+                    <p className="text-muted-foreground">Llacuna 162, Barcelona, España</p>
                   </div>
                 </div>
               </div>
