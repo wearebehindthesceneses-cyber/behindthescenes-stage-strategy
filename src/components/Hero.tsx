@@ -2,7 +2,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { Sparkles } from 'lucide-react';
 import heroBackgroundFrame from '@/assets/hero-background-frame.jpg';
-import theaterCurtainBackground from '@/assets/theater-curtain-clean.jpg';
+import theaterCurtainBackground from '@/assets/theater-curtain-dark.jpg';
 
 const Hero = () => {
   const { t } = useLanguage();
