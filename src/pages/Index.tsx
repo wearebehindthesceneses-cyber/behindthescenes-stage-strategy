@@ -4,6 +4,7 @@ import Hero from '@/components/Hero';
 import AboutUs from '@/components/AboutUs';
 import Services from '@/components/Services';
 import Clients from '@/components/Clients';
+import WorldMap from '@/components/WorldMap';
 import BlogPodcast from '@/components/BlogPodcast';
 import CTA from '@/components/CTA';
 import Contact from '@/components/Contact';
@@ -35,8 +36,9 @@ const Index = () => {
       <main>
         <Hero />
         <Services />
-        <AboutUs />
         <Clients />
+        <WorldMap />
+        <AboutUs />
         <BlogPodcast />
         <Contact />
       </main>

@@ -14,6 +14,11 @@ const AboutUs = () => {
       roleKey: 'team.alexia.role',
       image: '/lovable-uploads/e36d2e3c-cdf3-4e5c-9fdd-3e788f837aa0.png',
     },
+    {
+      name: 'Albert Salmerón',
+      roleKey: 'team.albert.role',
+      image: '/lovable-uploads/placeholder-profile.png',
+    },
   ];
 
   return (
@@ -28,9 +33,10 @@ const AboutUs = () => {
             {t('team.title')}
           </h2>
           
-          <div className="bg-gradient-to-br from-primary/5 via-card/40 to-secondary/5 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-lg border border-border/30 relative overflow-hidden mb-16">
-            {/* Subtle border effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl opacity-50"></div>
+          <div className="bg-gradient-to-br from-primary/8 via-card/50 to-secondary/8 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-xl border border-primary/20 relative overflow-hidden mb-16">
+            {/* Enhanced border effect */}
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/15 to-secondary/15 rounded-2xl opacity-70"></div>
+            <div className="absolute -inset-0.5 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-2xl opacity-50 blur-sm -z-10"></div>
             
             <p className="section-text fade-in-up leading-relaxed relative z-10 text-foreground">
               {t('about.text')}
