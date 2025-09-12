@@ -17,7 +17,7 @@ const AboutUs = () => {
     {
       name: 'Albert Salmerón',
       roleKey: 'team.albert.role',
-      image: '/lovable-uploads/placeholder-profile.png',
+      image: '/lovable-uploads/albert-profile.png',
     },
   ];
 
