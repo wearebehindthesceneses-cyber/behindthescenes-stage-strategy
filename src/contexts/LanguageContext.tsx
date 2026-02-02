@@ -51,7 +51,7 @@ const translations = {
     'team.subtitle': 'Nuestro equipo combina experiencia en estrategia, marketing y operaciones con una pasión común: hacer crecer proyectos culturales y de entretenimiento.',
     'team.andrea.role': 'Estrategia y desarrollo de negocio',
     'team.alexia.role': 'Marketing y comunicación',
-    'team.albert.role': 'Relaciones institucionales y subvenciones',
+    'team.albert.role': 'Relaciones institucionales',
     
     // CTA
     'cta.title': 'Hagamos que tu proyecto brille en el escenario que merece',
@@ -126,7 +126,7 @@ const translations = {
     'team.subtitle': 'Our team blends expertise in strategy, marketing, and operations with a shared passion: growing cultural and entertainment projects.',
     'team.andrea.role': 'Strategy and business development',
     'team.alexia.role': 'Marketing and communication',
-    'team.albert.role': 'Institutional relations and grants',
+    'team.albert.role': 'Institutional relations',
     
     // CTA
     'cta.title': "Let's make your project shine on the stage it deserves",
