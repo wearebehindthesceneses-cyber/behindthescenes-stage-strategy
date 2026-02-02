@@ -21,7 +21,7 @@ const Footer = () => {
   return (
     <footer>
       {/* Con el apoyo de section */}
-      <div className="bg-background py-8 border-t border-border">
+      <div className="bg-white py-8 border-t border-border">
         <div className="container mx-auto px-6">
           <p className="text-muted-foreground text-sm text-center mb-6">
             {t('footer.support')}
