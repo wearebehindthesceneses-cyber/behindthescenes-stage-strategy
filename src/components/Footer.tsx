@@ -19,7 +19,25 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-muted/50 border-t border-border">
+    <footer>
+      {/* Con el apoyo de section */}
+      <div className="bg-background py-8 border-t border-border">
+        <div className="container mx-auto px-6">
+          <p className="text-muted-foreground text-sm text-center mb-6">
+            {t('footer.support')}
+          </p>
+          <div className="flex justify-center">
+            <img 
+              src="/lovable-uploads/logos-apoyo-institucional.png" 
+              alt="Logos institucionales de apoyo" 
+              className="h-12 md:h-16 w-auto brightness-0 invert opacity-80"
+            />
+          </div>
+        </div>
+      </div>
+      
+      {/* Main footer */}
+      <div className="bg-muted/50 border-t border-border">
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Logo & Description */}
@@ -81,6 +99,7 @@ const Footer = () => {
             {t('footer.copyright')}
           </p>
         </div>
+      </div>
       </div>
     </footer>
   );

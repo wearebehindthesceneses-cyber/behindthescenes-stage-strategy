@@ -60,6 +60,7 @@ const translations = {
     // Footer
     'footer.quicklinks': 'Enlaces rápidos',
     'footer.copyright': '© 2024 Behind the Scenes. Todos los derechos reservados.',
+    'footer.support': 'Con el apoyo de:',
     
     // Contact Form
     'contact.form.name': 'Nombre',
@@ -134,6 +135,7 @@ const translations = {
     // Footer
     'footer.quicklinks': 'Quick Links',
     'footer.copyright': '© 2024 Behind the Scenes. All rights reserved.',
+    'footer.support': 'With the support of:',
     
     // Contact Form
     'contact.form.name': 'Name',
