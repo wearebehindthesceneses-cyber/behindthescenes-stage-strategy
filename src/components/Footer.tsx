@@ -30,7 +30,7 @@ const Footer = () => {
             <img 
               src="/lovable-uploads/logos-apoyo-institucional.png" 
               alt="Logos institucionales de apoyo" 
-              className="h-12 md:h-16 w-auto brightness-0 invert opacity-80"
+              className="h-12 md:h-16 w-auto"
             />
           </div>
         </div>
