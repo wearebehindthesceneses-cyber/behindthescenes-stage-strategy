@@ -6,16 +6,16 @@ const WorldMap = () => {
   const { t } = useLanguage();
 
   const locations = [
-    { name: 'Barcelona', coordinates: { x: 52, y: 43 } },
-    { name: 'Madrid', coordinates: { x: 48, y: 47 } },
-    { name: 'Valencia', coordinates: { x: 50, y: 45 } },
-    { name: 'París', coordinates: { x: 52, y: 40 } },
-    { name: 'Bruselas', coordinates: { x: 53, y: 38 } },
-    { name: 'Nueva York', coordinates: { x: 25, y: 42 } },
-    { name: 'Chicago', coordinates: { x: 20, y: 40 } },
-    { name: 'Dallas', coordinates: { x: 18, y: 48 } },
-    { name: 'Fort Lauderdale', coordinates: { x: 22, y: 55 } },
-    { name: 'Lisboa', coordinates: { x: 47, y: 47 } },
+    { name: 'Barcelona', coordinates: { x: 51.5, y: 38 } },
+    { name: 'Madrid', coordinates: { x: 49, y: 40 } },
+    { name: 'Valencia', coordinates: { x: 50, y: 40 } },
+    { name: 'París', coordinates: { x: 51, y: 34 } },
+    { name: 'Bruselas', coordinates: { x: 52, y: 32 } },
+    { name: 'Nueva York', coordinates: { x: 28, y: 38 } },
+    { name: 'Chicago', coordinates: { x: 24, y: 36 } },
+    { name: 'Dallas', coordinates: { x: 21, y: 44 } },
+    { name: 'Fort Lauderdale', coordinates: { x: 26, y: 50 } },
+    { name: 'Lisboa', coordinates: { x: 47, y: 40 } },
   ];
 
   return (
