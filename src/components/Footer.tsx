@@ -35,7 +35,7 @@ const Footer = () => {
               className="h-14 md:h-20 w-auto object-contain"
             />
           </div>
-          <p className="text-foreground/80 text-xs md:text-sm text-center max-w-2xl mx-auto leading-relaxed">
+          <p className="text-black text-xs md:text-sm text-center max-w-2xl mx-auto leading-relaxed">
             Aquesta actuació està impulsada i subvencionada pel Departament d'Empresa i Treball i cofinançada per la Unió Europea mitjançant el Fons Social Europeu Plus.
           </p>
         </div>
