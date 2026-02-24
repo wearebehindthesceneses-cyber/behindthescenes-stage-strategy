@@ -23,16 +23,21 @@ const Footer = () => {
       {/* Con el apoyo de section */}
       <div className="bg-white py-8 border-t border-border">
         <div className="container mx-auto px-6">
-          <p className="text-muted-foreground text-sm text-center mb-6">
-            {t('footer.support')}
-          </p>
-          <div className="flex justify-center">
+          <div className="flex justify-center items-center gap-8 md:gap-12 mb-6">
             <img 
-              src="/lovable-uploads/logos-apoyo-institucional.png" 
-              alt="Logos institucionales de apoyo" 
-              className="h-16 md:h-24 w-auto"
+              src="/lovable-uploads/logo-ue-fse.png" 
+              alt="Cofinançat per la Unió Europea - FSE+" 
+              className="h-14 md:h-20 w-auto object-contain"
+            />
+            <img 
+              src="/lovable-uploads/logo-departament-empresa.png" 
+              alt="Generalitat de Catalunya - Departament d'Empresa i Treball" 
+              className="h-14 md:h-20 w-auto object-contain"
             />
           </div>
+          <p className="text-foreground/80 text-xs md:text-sm text-center max-w-2xl mx-auto leading-relaxed">
+            Aquesta actuació està impulsada i subvencionada pel Departament d'Empresa i Treball i cofinançada per la Unió Europea mitjançant el Fons Social Europeu Plus.
+          </p>
         </div>
       </div>
       
