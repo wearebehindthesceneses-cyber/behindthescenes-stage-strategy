@@ -1,5 +1,4 @@
 import { useLanguage } from '@/contexts/LanguageContext';
-import { Instagram, Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -10,12 +9,6 @@ const Footer = () => {
     { key: 'nav.services', href: '#services' },
     { key: 'nav.projects', href: '#projects' },
     { key: 'nav.contact', href: '#contact' },
-  ];
-
-  const socialLinks = [
-    { icon: Instagram, href: 'https://instagram.com/behindthescenes.es', label: 'Instagram' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/company/webehind/', label: 'LinkedIn' },
-    { icon: Mail, href: 'mailto:hello@behindthescenes.es', label: 'Email' },
   ];
 
   return (
