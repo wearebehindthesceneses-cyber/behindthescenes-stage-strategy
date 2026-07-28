@@ -6,17 +6,17 @@ const WorldMap = () => {
   const { t } = useLanguage();
 
   const locations = [
-    { name: 'Barcelona', coordinates: { x: 75, y: 36 } },
-    { name: 'Madrid', coordinates: { x: 72, y: 39 } },
-    { name: 'Valencia', coordinates: { x: 74, y: 40 } },
-    { name: 'París', coordinates: { x: 68, y: 32 } },
-    { name: 'Bruselas', coordinates: { x: 70, y: 29 } },
-    { name: 'Nueva York', coordinates: { x: 30, y: 35 } },
-    { name: 'Chicago', coordinates: { x: 25, y: 31 } },
-    { name: 'Dallas', coordinates: { x: 21, y: 41 } },
-    { name: 'Fort Lauderdale', coordinates: { x: 30, y: 50 } },
-    { name: 'Lisboa', coordinates: { x: 66, y: 42 } },
-    { name: 'Puerto Vallarta', coordinates: { x: 15, y: 54 } },
+    { name: 'Barcelona', coordinates: { x: 73.2, y: 47.5 } },
+    { name: 'Madrid', coordinates: { x: 70.1, y: 48.7 } },
+    { name: 'Valencia', coordinates: { x: 71.9, y: 49.9 } },
+    { name: 'París', coordinates: { x: 73.3, y: 37.8 } },
+    { name: 'Bruselas', coordinates: { x: 74.4, y: 34.9 } },
+    { name: 'Nueva York', coordinates: { x: 32.6, y: 48.4 } },
+    { name: 'Chicago', coordinates: { x: 25.3, y: 46.9 } },
+    { name: 'Dallas', coordinates: { x: 20.4, y: 57.5 } },
+    { name: 'Fort Lauderdale', coordinates: { x: 29.6, y: 64.5 } },
+    { name: 'Lisboa', coordinates: { x: 67.2, y: 50.7 } },
+    { name: 'Puerto Vallarta', coordinates: { x: 17, y: 71.5 } },
   ];
 
   return (
