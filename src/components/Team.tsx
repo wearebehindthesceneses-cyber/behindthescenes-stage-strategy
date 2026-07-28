@@ -1,4 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
+import andreaPhoto from '@/assets/andrea-pascual.png.asset.json';
 
 const Team = () => {
   const { t } = useLanguage();
@@ -7,7 +8,7 @@ const Team = () => {
     {
       name: 'Andrea Pascual',
       roleKey: 'team.andrea.role',
-      image: '/lovable-uploads/d433e341-9050-4f03-be64-3950020f1738.png',
+      image: andreaPhoto.url,
     },
     {
       name: 'Alexia Sánchez',
