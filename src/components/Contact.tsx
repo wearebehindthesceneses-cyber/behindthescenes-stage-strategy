@@ -91,7 +91,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium group-hover/item:text-red-700 dark:group-hover/item:text-red-300 transition-colors duration-300">{t('contact.info.location')}</p>
-                    <p className="text-muted-foreground">Llacuna 162, Barcelona, España</p>
+                    <p className="text-muted-foreground">C/ Pau Gargallo, 30 (entrada Pascual i Vila), Barcelona, España</p>
                   </div>
                 </div>
               </div>
