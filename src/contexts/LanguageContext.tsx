@@ -34,7 +34,7 @@ const translations = {
     'services.production.desc': 'Venue scouting, importación y exportación de espectáculos, gestión integral de eventos.',
     'services.ticketing.title': 'Ticketing & Distribución',
     'services.ticketing.desc': 'Optimización de plataformas, estrategias de venta, pricing y revenue management.',
-    'services.marketing.title': 'Marketing & Estrategia Digital',
+    'services.marketing.title': 'Marketing & Estrategia digital',
     'services.marketing.desc': 'Estrategias de crecimiento, campañas digitales (Meta, Google, TikTok), analítica y creación de landings.',
     'services.communication.title': 'Comunicación & PR',
     'services.communication.desc': 'Prensa, relaciones públicas, comunicación institucional.',
